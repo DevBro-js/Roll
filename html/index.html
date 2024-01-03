@@ -37,29 +37,32 @@
         <button class="btn btn--game btn--new-game hidden">New Game</button>
       </div>
     </main>
-    <div class="username__container">
-      <div class="welcome-message">
-        <h1>Welcome to <span>Roll</span>, enter username to continue.</h1>
-      </div>
 
-      <div class="player-1__card">
-        <label for="player-1">Enter Player-1 Username:</label>
-        <input type="text" id="player-1__name" />
-      </div>
+    <section class="username__container hidden">
+      <div class="username__card">
+        <div class="welcome-message">
+          <h1>Welcome to <span>Roll</span>, enter username to continue.</h1>
+        </div>
 
-      <div class="player-2__card">
-        <label for="player-2">Enter Player-2 Username:</label>
-        <input type="text" id="player-2__name" />
-      </div>
+        <div class="player-1__card">
+          <label for="player-1">Enter Player-1 Username:</label>
+          <input type="text" id="player-1__name" />
+        </div>
 
-      <div class="score-card">
-        <label for="player-score">First to score?</label>
-        <input type="number" id="player-score" />
-      </div>
+        <div class="player-2__card">
+          <label for="player-2">Enter Player-2 Username:</label>
+          <input type="text" id="player-2__name" />
+        </div>
 
-      <div class="btn--play-game__card">
-        <button id="enter-game" class="btn btn--play-game">Enter Game</button>
+        <div class="score-card">
+          <label for="player-score" class="player-score">First to score?</label>
+          <input type="number" id="player-score" />
+        </div>
+
+        <div class="btn--play-game__card">
+          <button id="enter-game" class="btn btn--play-game">Enter Game</button>
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
