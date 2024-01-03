@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Roll</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script defer src="/js/script.js"></script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="grid">
+        <section class="player player--0 active">
+          <p class="player-1-username username">player 1</p>
+          <div class="overall overall__score-player-1">
+            <span class="overall-score overall-score-0">0</span>
+          </div>
+          <div class="current-score current-score__player-0">100</div>
+        </section>
+
+        <section class="player player--1">
+          <p class="player-2-username username">player 2</p>
+          <div class="overall overall__score-player-2">
+            <span class="overall-score overall-score-1">0</span>
+          </div>
+          <div class="current-score current-score__player-1">100</div>
+        </section>
+      </div>
+
+      <div class="dice-img">
+        <img src="/img/dice-1.jpg" alt="dice" class="dice" />
+      </div>
+
+      <div class="roll-container">
+        <button class="btn btn--game btn--roll">Roll</button>
+        <button class="btn btn--game btn--hold">Hold</button>
+        <button class="btn btn--game btn--new-game hidden">New Game</button>
+      </div>
+    </main>
+    <div class="username__container">
+      <div class="welcome-message">
+        <h1>Welcome to <span>Roll</span>, enter username to continue.</h1>
+      </div>
+
+      <div class="player-1__card">
+        <label for="player-1">Enter Player-1 Username:</label>
+        <input type="text" id="player-1__name" />
+      </div>
+
+      <div class="player-2__card">
+        <label for="player-2">Enter Player-2 Username:</label>
+        <input type="text" id="player-2__name" />
+      </div>
+
+      <div class="score-card">
+        <label for="player-score">First to score?</label>
+        <input type="number" id="player-score" />
+      </div>
+
+      <div class="btn--play-game__card">
+        <button id="enter-game" class="btn btn--play-game">Enter Game</button>
+      </div>
+    </div>
+  </body>
+</html>
