@@ -130,6 +130,7 @@ newGame.addEventListener("click", function (e) {
   currentPlayerScore1.textContent = currentPlayerScore2.textContent = 0;
   overallScorePlayer1.textContent = overallScorePlayer2.textContent = 0;
   activePlayer = 0;
+  overallScore = [0, 0];
   sections.forEach((sect) => {
     if (sect.classList.contains("winner")) {
       sect.classList.remove("winner");
