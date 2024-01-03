@@ -61,8 +61,8 @@ btnPlayGame.addEventListener("click", function (e) {
 rollBtn.addEventListener("click", function (e) {
   e.preventDefault();
   randomDice = Math.trunc(Math.random() * 5 + 1);
-  diceContainer.style.opacity = "100";
   diceLogo.src = `/img/dice-${randomDice}.jpg`;
+  diceContainer.style.opacity = "100";
   overallScoreContainers.forEach((con) => con.classList.add("animation-fade"));
   window.addEventListener("beforeunload", function (e) {
     e.preventDefault();
