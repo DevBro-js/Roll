@@ -148,6 +148,7 @@ img {
   background-color: var(--blackColor);
   border: 1px solid var(--iconColor);
   box-shadow: 0 1rem 1.5rem var(--blackColor);
+  cursor: pointer;
 }
 
 .btn:is(:first-child) {

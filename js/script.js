@@ -30,7 +30,7 @@ overallScore = [0, 0];
 currentPlayerScore1.textContent = currentPlayerScore2.textContent = 0;
 overallScorePlayer1.textContent = overallScorePlayer2.textContent = 0;
 
-diceContainer.style.opacity = "0";
+diceContainer.classList.add("hidden");
 
 btnPlayGame.addEventListener("click", function (e) {
   e.preventDefault();
@@ -61,8 +61,8 @@ btnPlayGame.addEventListener("click", function (e) {
 rollBtn.addEventListener("click", function (e) {
   e.preventDefault();
   randomDice = Math.trunc(Math.random() * 5 + 1);
+  diceContainer.classList.remove("hidden");
   diceLogo.src = `/img/dice-${randomDice}.jpg`;
-  diceContainer.style.opacity = "100";
   overallScoreContainers.forEach((con) => con.classList.add("animation-fade"));
   window.addEventListener("beforeunload", function (e) {
     e.preventDefault();
@@ -96,7 +96,7 @@ holdBtn.addEventListener("click", function (e) {
     overallScore[`${activePlayer}`];
 
   if (overallScore[`${activePlayer}`] >= scoreTarget) {
-    diceContainer.style.opacity = "0";
+    diceContainer.classList.add("hidden");
     document
       .querySelector(`.player--${activePlayer}`)
       .classList.remove("active");
