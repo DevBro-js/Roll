@@ -429,8 +429,8 @@ img {
     margin-top: 8rem;
   }
 
-  .username__card {
-    margin-top: -18rem;
+  .username__container {
+    margin-top: -15rem;
   }
 
   .username__container {
@@ -439,7 +439,7 @@ img {
 }
 
 @media only screen and (max-width: 414px) {
-  .username__card {
+  .username__container {
     margin-top: -15rem;
   }
 
@@ -484,10 +484,20 @@ img {
   }
 }
 
+@media only screen and (max-width: 390px) {
+  .username__container {
+    margin-top: -10rem;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .roll-container {
     top: 38%;
     left: 37%;
+  }
+
+  .username__container {
+    margin-top: -2rem;
   }
 }
 
