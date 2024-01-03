@@ -21,6 +21,7 @@ const sections = document.querySelectorAll(".player");
 const gameBtn = document.querySelectorAll(".btn--game");
 const goal = document.getElementById("player-score");
 const newGame = document.querySelector(".btn--new-game");
+const mainContainer = document.querySelector(".wrapper");
 
 let currentScore = 0;
 let activePlayer = 0;
@@ -44,6 +45,7 @@ btnPlayGame.addEventListener("click", function (e) {
   } else {
     scoreTarget = +goal.value;
     usernameContainer.classList.add("fade");
+    mainContainer.classList.remove("hidden");
     showPlayer1Username.textContent = player1Username.value
       .toLowerCase()
       .split(" ")

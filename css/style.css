@@ -191,7 +191,7 @@ img {
 
 .username__container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--whiteColor);
   position: absolute;
   top: 0;
@@ -344,6 +344,33 @@ img {
   .btn--game {
     font-size: 1.8rem;
   }
+
+  .username__container {
+    margin-top: -10rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .username__card label {
+    font-size: 2rem;
+    display: block;
+  }
+
+  .username__card input {
+    font-size: 2rem;
+  }
+
+  .username__card .btn {
+    margin-top: 1rem;
+  }
+
+  .player-1__card {
+    margin-bottom: -2rem;
+  }
+
+  .score-card {
+    margin-top: -2rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -401,6 +428,24 @@ img {
   .current-score {
     margin-top: 8rem;
   }
+
+  .username__card {
+    margin-top: -18rem;
+  }
+
+  .username__container {
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .username__card {
+    margin-top: -15rem;
+  }
+
+  .username__container {
+    overflow-y: hidden;
+  }
 }
 
 @media only screen and (max-width: 410px) {
@@ -421,6 +466,21 @@ img {
 
   .current-score {
     margin-top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .welcome-message {
+    font-size: 0.8rem;
+  }
+
+  .username__card label {
+    font-size: 1.8rem;
+    display: block;
+  }
+
+  .username__card input {
+    font-size: 1.8rem;
   }
 }
 
@@ -456,6 +516,14 @@ img {
     font-size: 3.5rem;
     margin-top: 8rem;
   }
+
+  .username__card {
+    margin-top: -8rem;
+  }
+
+  .username__container {
+    overflow-y: hidden;
+  }
 }
 
 @media only screen and (max-width: 353px) {
@@ -475,35 +543,14 @@ img {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .username__card {
-    overflow: hidden;
-    display: block;
-    padding: 10rem 5rem 0rem 5rem;
+@media only screen and (max-width: 340px) {
+  .welcome-message {
+    font-size: 0.7rem;
   }
+}
 
-  .welcome-message > h1 {
-    width: 100%;
-    font-size: 2rem;
-  }
-
-  .username__card label {
-    display: block;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-
-  /* .player-score {
-    margin-bottom: 0rem;
-  } */
-
-  .username__card input {
-    width: 30rem;
-  }
-
-  .username__card .btn--play-game {
-    /* background-color: #fff; */
-    margin-left: 4rem;
-    margin-top: 3rem;
+@media only screen and (max-width: 280px) {
+  .username__container {
+    margin-top: -2rem;
   }
 }
